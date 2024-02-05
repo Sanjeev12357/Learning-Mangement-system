@@ -25,6 +25,7 @@ function loadScript(src) {
 
 
 export async function buyCourse(token, courses, userDetails, navigate, dispatch) {
+    console.log("items",token, courses, userDetails, navigate, dispatch)
     const toastId = toast.loading("Loading...");
     try {
         // Load the script
@@ -41,6 +42,7 @@ export async function buyCourse(token, courses, userDetails, navigate, dispatch)
             {
                 Authorization: `Bearer ${token}`,
             });
+            console.log("orderresponse",orderResponse);
 
         if (!orderResponse.data.success) {
             throw new Error(orderResponse.data.message);
@@ -52,10 +54,11 @@ export async function buyCourse(token, courses, userDetails, navigate, dispatch)
             razorpay_order_id: orderResponse.data.data.id,
             razorpay_signature: "fake_signature",
         };
+        //console.log("dummy response",dummyResponse);
 
         // Dummy options
         const options = {
-            key: process.env.RAZORPAY_KEY,
+            key:"rzp_test_AV8RZzYYCdMXbR" ,
             currency: orderResponse.data.data.currency,
             amount: `${orderResponse.data.data.amount}`,
             order_id: orderResponse.data.data.id,
@@ -68,11 +71,12 @@ export async function buyCourse(token, courses, userDetails, navigate, dispatch)
             },
             handler: function (response) {
                 // Send successful email
-                sendPaymentSuccessEmail(response, orderResponse.data.message.amount, token);
+                sendPaymentSuccessEmail(response, orderResponse.data.data.amount, token);
                 // Verify payment (dummy verification for testing)
-                verifyPayment({ ...dummyResponse, courses }, token, navigate, dispatch);
+                verifyPayment({ ...response, courses }, token, navigate, dispatch);
             }
         };
+        console.log("options",options);
 
         // Instantiate the payment object
         const paymentObject = new window.Razorpay(options);
