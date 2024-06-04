@@ -1,4 +1,4 @@
-const BASE_URL = "https://lms-server-git-main-sanjeevs-projects-2af8b8d1.vercel.app/api/v1"
+const BASE_URL = "https://lms-server-opal.vercel.app/api/v1"
 
 // AUTH ENDPOINTS
 export const endpoints = {
