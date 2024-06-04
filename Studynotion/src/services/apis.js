@@ -1,4 +1,4 @@
-const BASE_URL = "http://ec2-13-50-240-155.eu-north-1.compute.amazonaws.com:4000/api/v1"
+const BASE_URL = "https://lms-server-opal.vercel.app/api/v1"
 
 // AUTH ENDPOINTS
 export const endpoints = {
