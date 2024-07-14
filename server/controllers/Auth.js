@@ -20,7 +20,7 @@ exports.sendotp = async (req, res) => {
     if (checkUserPresent) {
       return res.status(401).json({
         success: false,
-        message: "user already existed",
+        message: "user already exists",
       });
     }
 
