@@ -1,6 +1,6 @@
 Sure, here's an improved README file for your Learning Management System (LMS) project:
 
-# Study Notion Clone
+# Study Notion 
 
 ## Overview
 
