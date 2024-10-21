@@ -4,7 +4,7 @@ Sure, here's an improved README file for your Learning Management System (LMS) p
 
 ## Overview
 
-Study Notion Clone is a web-based Learning Management System (LMS) built using the MERN (MongoDB, Express.js, React, Node.js) stack. It provides a feature-rich environment for users to explore courses, manage profiles, and engage in learning activities. The project incorporates various functionalities, including user authentication, OTP generation, course catalog, instructor dashboards, and more.
+Study Notion  is a web-based Learning Management System (LMS) built using the MERN (MongoDB, Express.js, React, Node.js) stack. It provides a feature-rich environment for users to explore courses, manage profiles, and engage in learning activities. The project incorporates various functionalities, including user authentication, OTP generation, course catalog, instructor dashboards, and more.
 
 ## Screenshots
 
