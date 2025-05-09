@@ -1,4 +1,5 @@
-Sure, here's an improved README file for your Learning Management System (LMS) project:
+🚀 **Check out the live app:** [LMS](https://learning-mangement-system-pi.vercel.app/)
+
 
 # Study Notion 
 
