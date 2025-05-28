@@ -58,7 +58,7 @@ export async function buyCourse(token, courses, userDetails, navigate, dispatch)
 
         // Dummy options
         const options = {
-            key:"rzp_test_AV8RZzYYCdMXbR" ,
+            key:"rzp_test_8D5DwZyENmZRU2" ,
             currency: orderResponse.data.data.currency,
             amount: `${orderResponse.data.data.amount}`,
             order_id: orderResponse.data.data.id,
